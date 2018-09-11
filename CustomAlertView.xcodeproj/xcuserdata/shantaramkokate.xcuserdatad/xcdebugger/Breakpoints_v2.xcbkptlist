@@ -9,13 +9,29 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "AlertView.swift"
-            timestampString = "558339901.531719"
+            filePath = "CustomAlertView/ViewController.swift"
+            timestampString = "558348751.679671"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "64"
-            endingLineNumber = "64"
-            landmarkName = "init(title:message:ok:cancel:)"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "ViewController"
+            landmarkType = "21">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AlertView.swift"
+            timestampString = "558348751.6797661"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
+            landmarkName = "setupButtons()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -26,60 +42,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AlertView.swift"
-            timestampString = "558339901.532557"
+            timestampString = "558348751.680226"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
-            landmarkName = "init(title:message:ok:cancel:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CustomAlertView.AlertView.__allocating_init(title: Swift.String, message: Swift.String, okButton: Swift.String, cancel: Swift.String) -&gt; CustomAlertView.AlertView"
-                  moduleName = "CustomAlertView"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shantaramkokate/Documents/My%20Personal/CustomAlertView/AlertView.swift"
-                  timestampString = "558336063.129962"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "0"
-                  endingLineNumber = "0"
-                  offsetFromSymbolStart = "32">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "CustomAlertView.AlertView.init(title: Swift.String, message: Swift.String, okButton: Swift.String, cancel: Swift.String) -&gt; CustomAlertView.AlertView"
-                  moduleName = "CustomAlertView"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/shantaramkokate/Documents/My%20Personal/CustomAlertView/AlertView.swift"
-                  timestampString = "558336063.132745"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22"
-                  offsetFromSymbolStart = "92">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "AlertView.swift"
-            timestampString = "558339901.533255"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "setupUIView(title:message:ok:cancel:)"
+            startingLineNumber = "181"
+            endingLineNumber = "181"
+            landmarkName = "setupButtons()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

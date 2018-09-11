@@ -14,6 +14,7 @@
 		56768F662147851F004793DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 56768F642147851F004793DA /* LaunchScreen.storyboard */; };
 		56768F6E21478550004793DA /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56768F6D21478550004793DA /* AlertView.swift */; };
 		56768F70214793EA004793DA /* AlertViewProtocal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56768F6F214793EA004793DA /* AlertViewProtocal.swift */; };
+		56768F722147A8BA004793DA /* AlertViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56768F712147A8BA004793DA /* AlertViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		56768F672147851F004793DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		56768F6D21478550004793DA /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		56768F6F214793EA004793DA /* AlertViewProtocal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewProtocal.swift; sourceTree = "<group>"; };
+		56768F712147A8BA004793DA /* AlertViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +46,7 @@
 			children = (
 				56768F6D21478550004793DA /* AlertView.swift */,
 				56768F6F214793EA004793DA /* AlertViewProtocal.swift */,
+				56768F712147A8BA004793DA /* AlertViewModel.swift */,
 				56768F5A21478519004793DA /* CustomAlertView */,
 				56768F5921478519004793DA /* Products */,
 			);
@@ -144,6 +147,7 @@
 				56768F5E21478519004793DA /* ViewController.swift in Sources */,
 				56768F70214793EA004793DA /* AlertViewProtocal.swift in Sources */,
 				56768F5C21478519004793DA /* AppDelegate.swift in Sources */,
+				56768F722147A8BA004793DA /* AlertViewModel.swift in Sources */,
 				56768F6E21478550004793DA /* AlertView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

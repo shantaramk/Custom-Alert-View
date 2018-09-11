@@ -8,18 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController,AlertViewDelegate {
-    func show(animated: Bool) {
-        
-    }
-    
-    func dismiss(animated: Bool) {
-        
-    }
-    
-    var backgroundView = UIView()
-    
-    var containerView = UIView()
+class ViewController: UIViewController {
+ 
     
     
     override func viewDidLoad() {
@@ -31,14 +21,30 @@ class ViewController: UIViewController,AlertViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    @IBAction func showAlert2(_ sender: Any) {
+        let alertView = AlertView(title: "Errro",
+                                  message: "Currently we don't serve in this region.",
+                                  ok: "Ok",
+                                  cancel: "",target: self)
+        //self.view.addSubview(alertView)
+        alertView.show(animated: true)
+    }
     
     @IBAction func showAlert(_ sender: Any) {
         let alertView = AlertView(title: "Errro",
-                                  message: "if you remember, we have two variables defined on the top i.e backgroundView and dialogView. dialogView is the view that will contain the actual Alert content and backgroundView is the view behind the dialogView..",
+                                  message: "Currently we don't serve in this region.",
                                   ok: "Ok",
-                                  cancel: "Cancel")
-        self.view.addSubview(alertView)
+                                  cancel: "Cancel",target: self)
+        //self.view.addSubview(alertView)
+        alertView.show(animated: true)
     }
     
+}
+// MARK: - AlertView Delegate
+extension ViewController: AlertViewDelegate {
+    func alertView(alertView: AlertView, clickedButtonAtIndex buttonIndex: Int) {
+        
+    }
+
 }
 

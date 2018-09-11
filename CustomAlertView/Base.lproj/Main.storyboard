@@ -33,10 +33,29 @@
                                     <action selector="showAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rrp-hN-akZ"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n0J-eI-z8G">
+                                <rect key="frame" x="126.5" y="315" width="122" height="55"/>
+                                <color key="backgroundColor" red="0.96862745100000003" green="0.83317923500000002" blue="0.68811189230000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="G5Z-Ww-rPi"/>
+                                    <constraint firstAttribute="height" constant="55" id="M1r-Ff-Gb9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Show alert 2">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="showAlert2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cJy-XA-8l1"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="kD1-9B-FQR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="171" id="6Kj-D3-GYS"/>
+                            <constraint firstItem="n0J-eI-z8G" firstAttribute="height" secondItem="kD1-9B-FQR" secondAttribute="height" id="7Kf-Jv-r6r"/>
+                            <constraint firstItem="n0J-eI-z8G" firstAttribute="width" secondItem="kD1-9B-FQR" secondAttribute="width" id="TaW-CI-icM"/>
+                            <constraint firstItem="n0J-eI-z8G" firstAttribute="leading" secondItem="kD1-9B-FQR" secondAttribute="leading" id="f3Z-o9-73l"/>
+                            <constraint firstItem="n0J-eI-z8G" firstAttribute="top" secondItem="kD1-9B-FQR" secondAttribute="bottom" constant="69" id="ik8-ul-J4C"/>
                             <constraint firstItem="kD1-9B-FQR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lCD-lO-xEf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
