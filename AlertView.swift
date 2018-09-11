@@ -26,7 +26,7 @@ class AlertView: UIView, AlertViewModel {
     internal lazy var backgroundView: UIView = {
         let view = UIView()
         view.frame = frame
-        view.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.8)
+        view.backgroundColor = UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha: 0.4)
         return view
     }()
     internal lazy var containerView: UIView = {

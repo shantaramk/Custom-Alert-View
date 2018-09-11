@@ -25,7 +25,7 @@ extension AlertViewModel where Self: UIView {
         }
         if animated {
             self.containerView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)
-            UIView.animate(withDuration: 0.11, animations: {
+            UIView.animate(withDuration: 0.21, animations: {
                 self.backgroundView.alpha = 1.0
                 self.containerView.transform = .identity
             }) { (completion) in
