@@ -1,0 +1,8 @@
+How to use
+
+  let alertView = AlertView(title: AlertMessage.success, message: message, okButtonText: LocalizedStrings.okay, cancelButtonText: "") { (_, button) in
+            if button == .other {
+                self.navigationController?.popViewController(animated: true)
+            }
+        }
+        alertView.show(animated: true)
