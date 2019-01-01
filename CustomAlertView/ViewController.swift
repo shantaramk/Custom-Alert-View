@@ -31,11 +31,16 @@ class ViewController: UIViewController {
     }
     
     @IBAction func showAlert(_ sender: Any) {
-        let alertView = AlertView(title: "Errro",
+      /*  let alertView = AlertView(title: "Errro",
                                   message: "Currently we don't serve in this region.",
                                   ok: "Ok",
                                   cancel: "Cancel",target: self)
         //self.view.addSubview(alertView)
+        alertView.show(animated: true) */
+        let alertView = AlertView(title: "Error", message: "Currently we don't serve in this region.")
+        alertView.addAction(title: "Ok", style: "sty") {_ in
+            print("click")
+        }
         alertView.show(animated: true)
     }
     

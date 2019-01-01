@@ -8,6 +8,6 @@
 
 import Foundation
 import UIKit
-protocol AlertViewDelegate {
-    func alertView(alertView: AlertView, clickedButtonAtIndex buttonIndex: Int)
+@objc protocol AlertViewDelegate: class {
+    @objc optional func alertView(alertView: AlertView, clickedButtonAtIndex buttonIndex: Int)
 }
