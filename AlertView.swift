@@ -15,8 +15,14 @@ enum ButtonType {
 struct AlertColor {
     static let header = UIColor(red: 33/255, green: 33/255, blue: 33/255, alpha: 1.0)
     static let message = UIColor(red: 40/255, green: 40/255, blue: 40/255, alpha: 1.0)
+    static let primary = UIColor.blue
+    static let secondary = UIColor.black
+
 }
+
+
 class AlertView: UIView, AlertViewModel {
+    
     func cancelButtonClick() {
     }
     // MARK: - Properties
@@ -24,7 +30,9 @@ class AlertView: UIView, AlertViewModel {
     var cancelButtonTitle: String = ""
     weak var delegate: AlertViewDelegate?
     var completionHandler: ((String, ButtonType) -> Void)?
+    var animationOption: AnimationOption = .zoomInOut
 
+        
     // MAKR: - Lazy loading view
     internal lazy var backgroundView: UIView = {
         let view = UIView()
@@ -47,7 +55,7 @@ class AlertView: UIView, AlertViewModel {
         label.backgroundColor = .white
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
-        label.font = UIFont.poppins(font: .medium, size: .pt18)
+        label.font = UIFont.systemFont(ofSize: 14.0)
         label.textColor = AlertColor.header
         return label
     }()
@@ -64,7 +72,7 @@ class AlertView: UIView, AlertViewModel {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         label.numberOfLines = 0
-        label.font = UIFont.lato(font: .semiBold, size: .pt14)
+        label.font = UIFont.systemFont(ofSize: 12.0)
         label.textColor = AlertColor.message
         return label
     }()
@@ -72,20 +80,20 @@ class AlertView: UIView, AlertViewModel {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(cancelButtonClicked), for: .touchUpInside)
-        button.layer.borderColor = AppColor.primaryColor.cgColor
+        button.layer.borderColor = AlertColor.primary.cgColor
         button.layer.borderWidth = 1.0
-        button.setTitleColor(AppColor.primaryColor, for: .normal)
+        button.setTitleColor(AlertColor.primary, for: .normal)
         button.layer.cornerRadius = 8.0
-        button.titleLabel?.font = UIFont.poppins(font: .medium, size: .pt14)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 12.0)
         return button
     }()
     private lazy var okButton: UIButton = {
         let button = UIButton()
-        button.backgroundColor = AppColor.primaryColor
+        button.backgroundColor = AlertColor.primary
         button.translatesAutoresizingMaskIntoConstraints = false
         button.addTarget(self, action: #selector(okButtonClicked), for: .touchUpInside)
         button.layer.cornerRadius = 8.0
-        button.titleLabel?.font = UIFont.poppins(font: .medium, size: .pt14)
+        button.titleLabel?.font = UIFont.systemFont(ofSize: 12.0)
         return button
     }()
     override init(frame: CGRect) {

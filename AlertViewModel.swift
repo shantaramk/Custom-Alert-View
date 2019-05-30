@@ -15,6 +15,11 @@ protocol AlertViewModel {
     var containerView: UIView {get set}
 }
 
+
+enum AnimationOption: Int {
+    case zoomInOut
+}
+
 extension AlertViewModel where Self: UIView {
     
     func show(animated: Bool) {
@@ -38,6 +43,7 @@ extension AlertViewModel where Self: UIView {
             }
             topController.view.addSubview(self)
         } */
+        
         
         if animated {
             self.containerView.transform = CGAffineTransform(scaleX: 0.8, y: 0.8)

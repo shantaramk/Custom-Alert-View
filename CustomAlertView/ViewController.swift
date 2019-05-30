@@ -22,25 +22,26 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     @IBAction func showAlert2(_ sender: Any) {
-        let alertView = AlertView(title: "Errro",
-                                  message: "Currently we don't serve in this region.",
-                                  ok: "Ok",
-                                  cancel: "",target: self)
-        //self.view.addSubview(alertView)
+        let alertView = AlertView(title: "Success", message: "message", okButtonText: "Okay", cancelButtonText: "") { (_, button) in
+            
+            if button == .other {
+                
+            }
+            
+        }
+        
         alertView.show(animated: true)
     }
     
     @IBAction func showAlert(_ sender: Any) {
-      /*  let alertView = AlertView(title: "Errro",
-                                  message: "Currently we don't serve in this region.",
-                                  ok: "Ok",
-                                  cancel: "Cancel",target: self)
-        //self.view.addSubview(alertView)
-        alertView.show(animated: true) */
-        let alertView = AlertView(title: "Error", message: "Currently we don't serve in this region.")
-        alertView.addAction(title: "Ok", style: "sty") {_ in
-            print("click")
+        let alertView = AlertView(title: "Success", message: "message", okButtonText: "Okay", cancelButtonText: "No") { (_, button) in
+            
+            if button == .other {
+                
+            }
+            
         }
+        
         alertView.show(animated: true)
     }
     
